@@ -1,0 +1,515 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="2432,2808" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>Microsoft.Exchange.WebServices.Data</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Mail.Exchange.Activities</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>Microsoft.Exchange.WebServices</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="612,2743" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="https://www.trademe.co.nz/" Name="url" />
+      <Variable x:TypeArguments="x:String" Default="[Date.Today.ToString(&quot;yyyy&quot;)]" Name="yearNow" />
+      <Variable x:TypeArguments="x:String" Default="[Date.Today.AddYears(-10).ToString(&quot;yyyy&quot;)]" Name="yearTenPast" />
+      <Variable x:TypeArguments="x:String" Default="Toyota" Name="make" />
+      <Variable x:TypeArguments="x:String" Default="./search_result.xlsx" Name="filePath" />
+      <Variable x:TypeArguments="x:String" Name="emailAddr">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">beverly.waelchi37@ethereal.email</Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Default="Your Auto Scraping Result - Toyota Cars" Name="emailSubject" />
+      <Variable x:TypeArguments="x:String" Name="emailBody">
+        <Variable.Default>
+          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="&quot;Hello Team,&quot;+ Environment.Newline +&quot;This is a test message from Yujun Zhang. Did this email arrived at the correct address?&quot; + Environment.Newline + &quot;Cheers! &quot; + Environment.Newline + &quot;See attachment for your datascraping result.&quot;" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Default="search_result.xlsx" Name="fileName" />
+      <Variable x:TypeArguments="x:String" Name="realEmailAddr">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">BusinessEnablementTeam@fidelitylife.co.nz</Literal>
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="570,2357" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" Visible="False" WorkbookPath="[filePath]">
+      <ui:ExcelApplicationScope.Body>
+        <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="536,2248" sap2010:WorkflowViewState.IdRef="Sequence_10">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ExcelReadRange DataTable="{x:Null}" AddHeaders="True" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="494,59" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" SheetName="Sheet1">
+              <ui:ExcelReadRange.Range>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </ui:ExcelReadRange.Range>
+            </ui:ExcelReadRange>
+            <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="[BrowserType.Chrome]" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="494,2057" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="[url]">
+              <ui:OpenBrowser.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Web" sap:VirtualizedContainerService.HintSize="460,1954" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Default="Motors" Name="catagory" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:ClickText ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" FormattedText="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Text 'A  Motor'" sap:VirtualizedContainerService.HintSize="418,134" sap2010:WorkflowViewState.IdRef="ClickText_2" KeyModifiers="None" MouseButton="BTN_LEFT" Occurrence="1" Text="[catagory]">
+                      <ui:ClickText.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:ClickText.CursorPosition>
+                      <ui:ClickText.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2f060e71-46bb-4c03-91d1-5a468c80f69f" InformativeScreenshot="641ec564d001d1187122baf29f35edda" Selector="&lt;html app='chrome.exe' title='Buy &amp;amp; Sell on NZ&amp;apos;s #1 Auction &amp;amp; Classifieds Site | Trade Me' /&gt;&lt;webctrl aaname=' Motors ' tag='A' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:ClickText.Target>
+                    </ui:ClickText>
+                    <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item 'SELECT  Make'" sap:VirtualizedContainerService.HintSize="418,134" sap2010:WorkflowViewState.IdRef="SelectItem_12" Item="[make]">
+                      <ui:SelectItem.Items>
+                        <scg:List x:TypeArguments="x:String" Capacity="50">
+                          <x:String>Honda</x:String>
+                          <x:String>Hummer</x:String>
+                          <x:String>Hyundai</x:String>
+                          <x:String>INFINITI</x:String>
+                          <x:String>Isuzu</x:String>
+                          <x:String>Iveco</x:String>
+                          <x:String>Jaguar</x:String>
+                          <x:String>Jeep</x:String>
+                          <x:String>Kia</x:String>
+                          <x:String>Lamborghini</x:String>
+                          <x:String>Lancia</x:String>
+                          <x:String>Land Rover</x:String>
+                          <x:String>LDV</x:String>
+                          <x:String>Lexus</x:String>
+                          <x:String>Lotus</x:String>
+                          <x:String>Mahindra</x:String>
+                          <x:String>Maserati</x:String>
+                          <x:String>Mazda</x:String>
+                          <x:String>McLaren</x:String>
+                          <x:String>Mercedes-Benz</x:String>
+                          <x:String>MG</x:String>
+                          <x:String>MINI</x:String>
+                          <x:String>Mitsubishi</x:String>
+                          <x:String>Morgan</x:String>
+                          <x:String>Morris</x:String>
+                          <x:String>Nissan</x:String>
+                          <x:String>Opel</x:String>
+                          <x:String>Peugeot</x:String>
+                          <x:String>Pontiac</x:String>
+                          <x:String>Porsche</x:String>
+                          <x:String>Ram</x:String>
+                          <x:String>Renault</x:String>
+                          <x:String>Riley</x:String>
+                          <x:String>Rolls-Royce</x:String>
+                          <x:String>Rover</x:String>
+                          <x:String>Saab</x:String>
+                          <x:String>SEAT</x:String>
+                          <x:String>Skoda</x:String>
+                          <x:String>Smart</x:String>
+                          <x:String>Ssangyong</x:String>
+                          <x:String>Subaru</x:String>
+                          <x:String>Suzuki</x:String>
+                          <x:String>Tesla</x:String>
+                          <x:String>Toyota</x:String>
+                          <x:String>Triumph</x:String>
+                          <x:String>TVR</x:String>
+                          <x:String>Vauxhall</x:String>
+                          <x:String>Volkswagen</x:String>
+                          <x:String>Volvo</x:String>
+                          <x:String>Other</x:String>
+                        </scg:List>
+                      </ui:SelectItem.Items>
+                      <ui:SelectItem.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="bc4425ba-eb1d-445b-ac53-9404c8ad1c82" InformativeScreenshot="e03284e2d29ee2932f79d6acb4e3a818" Selector="&lt;webctrl tag='SELECT' idx='1' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:SelectItem.Target>
+                    </ui:SelectItem>
+                    <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item 'SELECT  Year1'" sap:VirtualizedContainerService.HintSize="418,134" sap2010:WorkflowViewState.IdRef="SelectItem_13" Item="[yearTenPast]">
+                      <ui:SelectItem.Items>
+                        <scg:List x:TypeArguments="x:String" Capacity="50">
+                          <x:String>Any</x:String>
+                          <x:String>2021</x:String>
+                          <x:String>2020</x:String>
+                          <x:String>2019</x:String>
+                          <x:String>2018</x:String>
+                          <x:String>2017</x:String>
+                          <x:String>2016</x:String>
+                          <x:String>2015</x:String>
+                          <x:String>2014</x:String>
+                          <x:String>2013</x:String>
+                          <x:String>2012</x:String>
+                          <x:String>2011</x:String>
+                          <x:String>2010</x:String>
+                          <x:String>2009</x:String>
+                          <x:String>2008</x:String>
+                          <x:String>2007</x:String>
+                          <x:String>2006</x:String>
+                          <x:String>2005</x:String>
+                          <x:String>2004</x:String>
+                          <x:String>2003</x:String>
+                          <x:String>2002</x:String>
+                          <x:String>2001</x:String>
+                          <x:String>2000</x:String>
+                          <x:String>1999</x:String>
+                          <x:String>1998</x:String>
+                          <x:String>1997</x:String>
+                          <x:String>1996</x:String>
+                          <x:String>1995</x:String>
+                          <x:String>1994</x:String>
+                          <x:String>1993</x:String>
+                          <x:String>1992</x:String>
+                          <x:String>1991</x:String>
+                          <x:String>1990</x:String>
+                          <x:String>1989</x:String>
+                          <x:String>1988</x:String>
+                          <x:String>1987</x:String>
+                          <x:String>1986</x:String>
+                          <x:String>1985</x:String>
+                          <x:String>1984</x:String>
+                          <x:String>1983</x:String>
+                          <x:String>1982</x:String>
+                          <x:String>1981</x:String>
+                          <x:String>1980</x:String>
+                          <x:String>1979</x:String>
+                          <x:String>1978</x:String>
+                          <x:String>1977</x:String>
+                          <x:String>1976</x:String>
+                          <x:String>1975</x:String>
+                          <x:String>1974</x:String>
+                          <x:String>1973</x:String>
+                        </scg:List>
+                      </ui:SelectItem.Items>
+                      <ui:SelectItem.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e745a144-5526-41aa-ac8f-3215e8e16701" InformativeScreenshot="9c28117aed8c5f6dd3e61144bc23bc52" Selector="&lt;webctrl id='tg-*' tag='SELECT' idx='3' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:SelectItem.Target>
+                    </ui:SelectItem>
+                    <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item 'SELECT  Year2'" sap:VirtualizedContainerService.HintSize="418,134" sap2010:WorkflowViewState.IdRef="SelectItem_14" Item="[yearNow]">
+                      <ui:SelectItem.Items>
+                        <scg:List x:TypeArguments="x:String" Capacity="50">
+                          <x:String>Any</x:String>
+                          <x:String>2021</x:String>
+                          <x:String>2020</x:String>
+                          <x:String>2019</x:String>
+                          <x:String>2018</x:String>
+                          <x:String>2017</x:String>
+                          <x:String>2016</x:String>
+                          <x:String>2015</x:String>
+                          <x:String>2014</x:String>
+                          <x:String>2013</x:String>
+                          <x:String>2012</x:String>
+                          <x:String>2011</x:String>
+                          <x:String>2010</x:String>
+                          <x:String>2009</x:String>
+                          <x:String>2008</x:String>
+                          <x:String>2007</x:String>
+                          <x:String>2006</x:String>
+                          <x:String>2005</x:String>
+                          <x:String>2004</x:String>
+                          <x:String>2003</x:String>
+                          <x:String>2002</x:String>
+                          <x:String>2001</x:String>
+                          <x:String>2000</x:String>
+                          <x:String>1999</x:String>
+                          <x:String>1998</x:String>
+                          <x:String>1997</x:String>
+                          <x:String>1996</x:String>
+                          <x:String>1995</x:String>
+                          <x:String>1994</x:String>
+                          <x:String>1993</x:String>
+                          <x:String>1992</x:String>
+                          <x:String>1991</x:String>
+                          <x:String>1990</x:String>
+                          <x:String>1989</x:String>
+                          <x:String>1988</x:String>
+                          <x:String>1987</x:String>
+                          <x:String>1986</x:String>
+                          <x:String>1985</x:String>
+                          <x:String>1984</x:String>
+                          <x:String>1983</x:String>
+                          <x:String>1982</x:String>
+                          <x:String>1981</x:String>
+                          <x:String>1980</x:String>
+                          <x:String>1979</x:String>
+                          <x:String>1978</x:String>
+                          <x:String>1977</x:String>
+                          <x:String>1976</x:String>
+                          <x:String>1975</x:String>
+                          <x:String>1974</x:String>
+                          <x:String>1973</x:String>
+                        </scg:List>
+                      </ui:SelectItem.Items>
+                      <ui:SelectItem.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c66017c1-b7e9-47d1-b48a-1a3fa8d7fe39" InformativeScreenshot="d2d4c2753efc742cfdfea5524ef3add7" Selector="&lt;webctrl id='tg-*' tag='SELECT' idx='4' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:SelectItem.Target>
+                    </ui:SelectItem>
+                    <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON body style'" sap:VirtualizedContainerService.HintSize="418,106" sap2010:WorkflowViewState.IdRef="Click_13" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="992295b2-6be3-49eb-ba7b-ed4b4b8d4bcd" InformativeScreenshot="8b81375cbf2652aa80ed92c0c3e10e28" Selector="&lt;webctrl parentid='tg-*' tag='BUTTON' idx='1' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN Hatchback'" sap:VirtualizedContainerService.HintSize="418,106" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8555ad30-1ff6-4b9d-b649-b2123b12e527" InformativeScreenshot="fcbc27382985ea0a34f9a6a706ccf8aa" Selector="&lt;webctrl parentid='tg-*' parentname='body_style' idx='14' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN RVSUV'" sap:VirtualizedContainerService.HintSize="418,106" sap2010:WorkflowViewState.IdRef="Click_12" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="35611f9c-ff0c-46a3-b0f5-9e235cb67e66" InformativeScreenshot="bd0c7d6ad161d793f59823c770beddcd" Selector="&lt;webctrl parentid='tg-*' parentname='body_style' idx='32' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON search'" sap:VirtualizedContainerService.HintSize="418,106" sap2010:WorkflowViewState.IdRef="Click_14" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="67818425-184c-4e61-b93e-43c5216df31d" InformativeScreenshot="75808141b6280a0a105958e9c3ae43d0" Selector="&lt;webctrl tag='BUTTON' type='submit' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="418,63" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="Add 3 second delay before start data scraping in case sometime the page didn't load fast enough" />
+                    <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="418,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                    <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="418,417" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="carTable" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,325" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:ExtractData DelayBetweenPagesMS="{x:Null}" ContinueOnError="True" DataTable="[CarTable]" DisplayName="Extract Structured Data 'car-info'" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='tg-col' /&gt;&lt;webctrl tag='tm-search-card-switcher' idx='1' /&gt;&lt;webctrl tag='tm-motors-search-card-redesign' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/row&gt;&lt;column exact='1' name='Car' attr='text' name2='URL' attr2='href'&gt;&lt;webctrl tag='tg-col' /&gt;&lt;webctrl tag='tm-search-card-switcher' idx='1' /&gt;&lt;webctrl tag='tm-motors-search-card-redesign' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='Model' attr='text'&gt;&lt;webctrl tag='tg-col' /&gt;&lt;webctrl tag='tm-search-card-switcher' idx='1' /&gt;&lt;webctrl tag='tm-motors-search-card-redesign' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Location' attr='text'&gt;&lt;webctrl tag='tg-col' /&gt;&lt;webctrl tag='tm-search-card-switcher' idx='1' /&gt;&lt;webctrl tag='tm-motors-search-card-redesign' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Listing Time' attr='text'&gt;&lt;webctrl tag='tg-col' /&gt;&lt;webctrl tag='tm-search-card-switcher' idx='1' /&gt;&lt;webctrl tag='tm-motors-search-card-redesign' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='tm-motors-closing-time' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Odometer' attr='text'&gt;&lt;webctrl tag='tg-col' /&gt;&lt;webctrl tag='tm-search-card-switcher' idx='1' /&gt;&lt;webctrl tag='tm-motors-search-card-redesign' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Engine Specs' attr='text'&gt;&lt;webctrl tag='tg-col' /&gt;&lt;webctrl tag='tm-search-card-switcher' idx='1' /&gt;&lt;webctrl tag='tm-motors-search-card-redesign' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='span' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='Subtitle' attr='text'&gt;&lt;webctrl tag='tg-col' /&gt;&lt;webctrl tag='tm-search-card-switcher' idx='1' /&gt;&lt;webctrl tag='tm-motors-search-card-redesign' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;/column&gt;&lt;column exact='1' name='Background Check' attr='text'&gt;&lt;webctrl tag='tg-col' /&gt;&lt;webctrl tag='tm-search-card-switcher' idx='1' /&gt;&lt;webctrl tag='tm-motors-search-card-redesign' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='tm-background-check-info' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Price' attr='text'&gt;&lt;webctrl tag='tg-col' /&gt;&lt;webctrl tag='tm-search-card-switcher' idx='1' /&gt;&lt;webctrl tag='tm-motors-search-card-redesign' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='On Road Cost' attr='text'&gt;&lt;webctrl tag='tg-col' /&gt;&lt;webctrl tag='tm-search-card-switcher' idx='1' /&gt;&lt;webctrl tag='tm-motors-search-card-redesign' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ExtractData_1" MaxNumberOfResults="0" NextLinkSelector="&lt;webctrl aaname=' Next ' tag='A' /&gt;" SimulateClick="True">
+                          <ui:ExtractData.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c7e3032b-5497-40ea-88e5-ca1769f2fcd0" InformativeScreenshot="09deef3d557da1c9b934306afb1a4a43" Selector="&lt;webctrl css-selector='body&amp;gt;tm-root&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;tm-motors-search-results&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;tm-search-results&amp;gt;div&amp;gt;div&amp;gt;tm-potential-r18-content&amp;gt;div&amp;gt;tg-row' tag='TG-ROW' /&gt;" WaitForReady="COMPLETE">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                            </ui:Target>
+                          </ui:ExtractData.Target>
+                        </ui:ExtractData>
+                        <ui:ExcelWriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[carTable]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="Sheet1" />
+                      </Sequence>
+                    </Sequence>
+                  </Sequence>
+                </ActivityAction>
+              </ui:OpenBrowser.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:OpenBrowser>
+          </Sequence>
+        </ActivityAction>
+      </ui:ExcelApplicationScope.Body>
+    </ui:ExcelApplicationScope>
+    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" Email="{x:Null}" MailMessage="{x:Null}" Password="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" Body="[emailBody]" DisplayName="Private: Send Gmail Message" EnableSSL="True" From="takozh718@gmail.com" sap:VirtualizedContainerService.HintSize="570,151" sap2010:WorkflowViewState.IdRef="SendMail_2" IsBodyHtml="False" Name="Auto Send" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[emailSubject]" To="[realEmailAddr]">
+      <ui:SendMail.Files>
+        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+          <InArgument x:TypeArguments="x:String">[fileName]</InArgument>
+        </scg:List>
+      </ui:SendMail.Files>
+    </ui:SendMail>
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="570,63" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="Job Complete!" />
+  </Sequence>
+</Activity>
